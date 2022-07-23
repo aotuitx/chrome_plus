@@ -101,6 +101,8 @@ std::wstring GetCommand(LPWSTR param)
             // args.push_back(L"--disable-background-networking");
 
             args.push_back(L"--disable-features=RendererCodeIntegrity,FlashDeprecationWarning");
+            
+            args.push_back(L'--user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/999.00 (KHTML, like Gecko) Chrome/999.0.0.0 Safari/999.00"');
 
             //if (IsNeedPortable())
             {
