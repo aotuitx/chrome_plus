@@ -98,7 +98,12 @@ std::wstring GetCommand(LPWSTR param)
             args.push_back(L"--shuax");
 
             // args.push_back(L"--force-local-ntp");
-            // args.push_back(L"--disable-background-networking");
+            args.push_back(L"--disable-background-networking");
+            args.push_back(L"--disable-breakpad");
+            args.push_back(L"--disable-crash-reporter");
+            args.push_back(L"--disable-logging");
+            args.push_back(L"--disable-notifications");
+            args.push_back(L"--no-report-upload");
 
             args.push_back(L"--disable-features=RendererCodeIntegrity,FlashDeprecationWarning");
 
