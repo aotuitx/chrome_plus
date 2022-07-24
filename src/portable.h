@@ -104,7 +104,8 @@ std::wstring GetCommand(LPWSTR param)
             args.push_back(L"--disable-logging");
             args.push_back(L"--disable-notifications");
             args.push_back(L"--no-report-upload");
-
+            args.push_back(L"--simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'");
+            args.push_back(L"--user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/999.0.0.0 Safari/537.36'");
             args.push_back(L"--disable-features=RendererCodeIntegrity,FlashDeprecationWarning");
 
             //if (IsNeedPortable())
